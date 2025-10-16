@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cabane du Pêcheur - Le Port d'Asse | Poissonnerie & Boucherie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Votre CSS existant reste inchangé */
+        :root {
+            --primary-blue: #1a5f7a;
+            --secondary-blue: #2980b9;
+            --orange: #e67e22;
+            --yellow: #f1c40f;
+            --green: #27ae60;
+            --off-white: #fdfefe;
+            --light-gray: #f5f5f5;
+            --dark-blue: #0a3d62;
+            --brown: #8B4513;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: var(--off-white);
+        }
+        
+        /* ... (le reste de votre CSS actuel) ... */
+        
+        .product-image {
+            height: 200px;
+            overflow: hidden;
+            background-color: #f8f9fa;
+        }
+        
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .product-badge {
+            background-color: var(--green);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .badge-new {
+            background-color: var(--orange);
+        }
+
+        .badge-popular {
+            background-color: var(--secondary-blue);
+        }
+
+        .badge-special {
+            background-color: var(--primary-blue);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>La Cabane du <span>Pêcheur</span></h1>
+                <div class="subtitle">LE PORT D'ASSE</div>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À Propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#produits">Produits</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section avec votre image -->
+    <section class="hero" id="accueil" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/hero-bg.jpg');">
+        <div class="container">
+            <h2>Votre marché de la fraîcheur</h2>
+            <p>Au cœur de la Côte d'Ivoire, découvrez les meilleurs produits de la mer et de la boucherie. Fraîcheur garantie et service personnalisé.</p>
+            <a href="#produits" class="btn">Voir nos produits</a>
+            <a href="#contact" class="btn btn-outline">Nous contacter</a>
+        </div>
+    </section>
+
+    <!-- About Section avec votre image -->
+    <section class="about african-pattern" id="apropos">
+        <div class="container">
+            <h2 class="section-title">À Propos de Nous</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>La Cabane du Pêcheur - Le Port d'Asse</h3>
+                    <p>Fondée sur les rives de la Côte d'Ivoire, La Cabane du Pêcheur est votre référence pour des produits de la mer et de boucherie d'une fraîcheur exceptionnelle.</p>
+                    <p>Notre engagement est de vous offrir le meilleur de l'océan et des terres ivoiriennes.</p>
+                    <div class="business-type">
+                        <h4>POISSONNERIE & BOUCHERIE</h4>
+                        <p><strong>Vente en Gros et Détail</strong></p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="La Cabane du Pêcheur - Notre établissement">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (inchangée) -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fish"></i>
+                    </div>
+                    <h3>Poissonnerie</h3>
+                    <p>Une large sélection de poissons et fruits de mer frais, pêchés localement.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-drumstick-bite"></i>
+                    </div>
+                    <h3>Boucherie</h3>
+                    <p>Viandes de première qualité, découpées avec expertise.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Vente en Gros</h3>
+                    <p>Service dédié aux professionnels de la restauration.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Vente au Détail</h3>
+                    <p>Service personnalisé pour les particuliers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section avec VOS images -->
+    <section class="products african-pattern" id="produits">
+        <div class="container">
+            <h2 class="section-title">Nos Produits</h2>
+            <div class="product-tabs">
+                <button class="tab-btn active" data-tab="poissonnerie">Poissonnerie</button>
+                <button class="tab-btn" data-tab="boucherie">Boucherie</button>
+            </div>
+            
+            <div class="tab-content active" id="poissonnerie">
+                <div class="product-grid">
+                    <!-- Thon blanc -->
+                    <div class="product-card">
+                        <div class="product-image">
+                           <img src="images/poisson.jpg" alt="Poisson frais" />
+                        </div>
+                        <div class="product-info">
+                            <div class="product-badge badge-popular">Populaire</div>
+                            <h3>Thon blanc</h3>
+                            <p>Thon frais de qualité supérieure, riche en oméga-3</p>
+                            <div class="product-price">6.500 FCFA/kg</div>
+                            <a href="https://wa.me/2250710901115?text=Bonjour, je suis intéressé par le Thon blanc" class="btn" target="_blank">Commander</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Mulet -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/mulet.jpg" alt="Mulet frais">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-badge">Frais du jour</div>
+                            <h3>Mulet</h3>
+                            <p>Poisson frais pêché localement, idéal pour les grillades</p>
+                            <div class="product-price">3.800 FCFA/kg</div>
+                            <a href="https://wa.me/2250710901115?text=Bonjour, je suis intéressé par le Mulet" class="btn" target="_blank">Commander</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Capitaine -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/capitaine.jpg" alt="Capitaine frais">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-badge badge-new">Nouveau</div>
+                            <h3>Capitaine</h3>
+                            <p>Poisson noble à la chair ferme et savoureuse</p>
+                            <div class="product-price">4.500 FCFA/kg</div>
+                            <a href="https://wa.me/2250710901115?text=Bonjour, je suis intéressé par le Capitaine" class="btn" target="_blank">Commander</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Sépia -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/sepia.jpg" alt="Sépia fraîche">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-badge badge-special">Spécialité</div>
+                            <h3>Sépia</h3>
+                            <p>Fruit de mer délicat et savoureux, parfait en sauce</p>
+                            <div class="product-price">5.500 FCFA/kg</div>
+                            <a href="https://wa.me/2250710901115?text=Bonjour, je suis intéressé par la Sépia" class="btn" target="_blank">Commander</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Sardine bleu -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/sardine-bleu.jpg" alt="Sardine bleu fraîche">
+                        </div>
+                        <div class="product-info">
+                            <h3>Sardine bleu (Machère)</h3>
+                            <p>Sardines fraîches et savoureuses, excellentes grillées</p>
+                            <div class="product-price">2.500 FCFA/kg</div>
+                            <a href="https://wa.me/2250710901115?text=Bonjour, je suis intéressé par les Sardines bleu" class="btn" target="_blank">Commander</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Pageot -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/pageot.jpg" alt="Pageot frais">
+                        </div>
+                        <div class="product-info">
+                            <h3>Pageot</h3>
+                            <p>Poisson noble à la chair délicate et raffinée</p>
+                            <div class="product-price">5.800 FCFA/kg</div>
+                            <a href="https://wa.me/2250710901115?text=Bonjour, je suis intéressé par le Pageot" class="btn" target="_blank">Commander</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Carpe blanche -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/carpe-blanche.jpg" alt="Carpe blanche fraîche">
+                        </div>
+                        <div class="product-info">
+                            <h3>Carpe blanche</h3>
+                            <p>Poisson d'eau douce savoureux, idéal pour les fêtes</p>
+                            <div class="product-price">4.200 FCFA/kg</div>
+                            <a href="https://wa.me/2250710901115?text=Bonjour, je suis intéressé par la Carpe blanche" class="btn" target="_blank">Commander</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Maquereau -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/maquereau.jpg" alt="Maquereau frais">
+                        </div>
+                        <div class="product-info">
+                            <h3>Maquereau (bonite)</h3>
+                            <p>Poisson gras et savoureux, riche en nutriments</p>
+                            <div class="product-price">3.200 FCFA/kg</div>
+                            <a href="https://wa.me/2250710901115?text=Bonjour, je suis intéressé par le Maquereau" class="btn" target="_blank">Commander</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Espadon -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/espadon.jpg" alt="Espadon frais">
+                        </div>
+                        <div class="product-info">
+                            <h3>Espadon</h3>
+                            <p>Poisson noble à la chair ferme, très prisé</p>
+                            <div class="product-price">8.500 FCFA/kg</div>
+                            <a href="https://wa.me/2250710901115?text=Bonjour, je suis intéressé par l'Espadon" class="btn" target="_blank">Commander</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="boucherie">
+                <div class="product-grid">
+                    <!-- Produits boucherie (utilisez vos images si disponibles) -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/cotelette.jpg" alt="Côtelette d'agneau">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-badge">Promotion</div>
+                            <h3>Côtelette d'agneau</h3>
+                            <p>Côtelettes d'agneau de qualité supérieure</p>
+                            <div class="product-price">8.500 FCFA/kg</div>
+                            <a href="https://wa.me/2250710901115?text=Bonjour, je suis intéressé par les Côtelettes d'agneau" class="btn" target="_blank">Commander</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Ajoutez d'autres produits boucherie de la même manière -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (inchangée) -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contactez-nous</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>(+225) 27 34 77 19 24</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>07 10 90 11 15</p>
+                            <a href="https://wa.me/2250710901115" class="btn" target="_blank">Envoyer un message</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>Le Port d'Asse, Côte d'Ivoire</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Horaires d'ouverture</h3>
+                            <p>Lundi - Samedi: 7h00 - 19h00</p>
+                            <p>Dimanche: 8h00 - 13h00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Décrivez votre commande..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (inchangé) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>La Cabane du Pêcheur</h3>
+                    <p>Votre marché de la fraîcheur au cœur de la Côte d'Ivoire</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> (+225) 27 34 77 19 24</p>
+                    <p><i class="fab fa-whatsapp"></i> 07 10 90 11 15</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Le Port d'Asse, Côte d'Ivoire</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2024 La Cabane du Pêcheur - Le Port d'Asse</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Votre JavaScript existant
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+        
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                const tabId = btn.getAttribute('data-tab');
+                document.getElementById(tabId).classList.add('active');
+            });
+        });
+        
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            const whatsappMessage = `Bonjour, je m'appelle ${name}. Mon numéro: ${phone}. ${message}`;
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://wa.me/2250710901115?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+            this.reset();
+            alert('Message préparé pour WhatsApp. Redirection...');
+        });
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    document.querySelector('nav').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
